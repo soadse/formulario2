@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #0D100F;
+    color: #939898;
+    box-shadow: 0 0  10px red;
+}
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: none;
+}
+form legend {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
+form label {
+    margin-bottom: 5px;
+}
+form input {
+    height: 40px;
+    background-color: black;
+}
+form textarea {
+    height: 150px;
+    resize: none;
+    background-color: #292728;
+}
+form  input, textarea {
+    outline: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+form input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    border: none;
+    margin-left: auto;
+    background-color: #292728;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Focus */
+
+
+form input:invalid:focus,
+form textarea:invalid:focus {
+    border-bottom: 2px solid red;
+}
+form input:nth-of-type(3):focus {
+    border-bottom: 2px solid green;
+}
+form input:valid:focus,
+form textarea:valid:focus {
+    border-bottom: 2px solid green;
+}
