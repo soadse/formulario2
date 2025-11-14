@@ -22,7 +22,6 @@ form {
     max-width: 500px;
     background-color: #0D100F;
     color: #939898;
-    box-shadow: 0 0  10px red;
 }
 form fieldset {
     display: flex;
